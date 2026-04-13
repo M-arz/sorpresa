@@ -8,6 +8,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Playfair+Display:ital,wght@1,600&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Partículas de fondo -->
+    <div id="particles-container"></div>
+
     <!-- Hero Section -->
     <header class="hero" id="home">
         <div class="hero-bg"></div>
@@ -31,7 +34,7 @@
                     <div class="timeline-content glass-card hover-lift">
                         <h3>El Día que nos Conocimos</h3>
                         <p class="date">Aquel día especial</p>
-                        <p>El momento en que todo cambió y mi vida se llenó de color. (Haz clic para editar este texto luego).</p>
+                        <p>El momento en que todo cambió y mi vida se llenó de color.</p>
                     </div>
                 </div>
                 <div class="timeline-item">
@@ -78,6 +81,30 @@
         </div>
     </section>
 
+    <!-- Gallery Section -->
+    <section class="gallery-section" id="gallery">
+        <div class="container">
+            <h2 class="section-title">Momentos Especiales</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item glass-card hover-lift">
+                    <img src="img/nosotros1.jpg" alt="Momentos felices">
+                </div>
+                <div class="gallery-item glass-card hover-lift">
+                    <img src="img/nosotros2.jpg" alt="Risas y alegría">
+                </div>
+                <div class="gallery-item glass-card hover-lift">
+                    <img src="img/nosotros3.jpg" alt="Nuestra historia">
+                </div>
+                <div class="gallery-item glass-card hover-lift">
+                    <img src="img/nosotros4.jpg" alt="Momentos juntos">
+                </div>
+                <div class="gallery-item glass-card hover-lift">
+                    <img src="img/nosotros5.jpg" alt="Siempre tú">
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Final Letter -->
     <section class="letter-section" id="letter">
         <div class="glass-card letter-card">
@@ -90,6 +117,24 @@
             </div>
         </div>
     </section>
+
+    <!-- Botón de Sorpresa Secreta -->
+    <div class="secret-button-container">
+        <button id="surprise-btn" class="surprise-btn" title="¡Haz clic para una sorpresa!">🎁</button>
+    </div>
+
+    <!-- Modal de Mensaje Secreto -->
+    <div id="surprise-modal" class="modal">
+        <div class="modal-content glass-card">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <div class="heart-icon">❤️</div>
+                <h2 id="surprise-title">Un Mensajito para Ti</h2>
+                <p id="surprise-message"></p>
+                <div class="confetti-container" id="confetti-container"></div>
+            </div>
+        </div>
+    </div>
 
     <script src="js/app.js"></script>
 </body>
