@@ -72,6 +72,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
             }
         });
+    });
+
     // --- Creative Enhancements ---
 
     // 1. Heart Particles Generator
